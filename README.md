@@ -15,7 +15,7 @@ Citation block is as follows.
 
 This repository contains the scripts for pretraining MAE-LM, Representation Deficiency in Masked Language Modeling, which is compatiable with Huggingface Transformers library. You guys can easily mimic pre-training method in MAE-LM, peeking `train.py`
 
-Since pre-trained model class is inherited from RoBERTa, pre-trained models are able to be loaded the very simple code we all know, as follows:
+Since pre-trained model class is inherited from RoBERTa, pre-trained models are able to be loaded via the very simple code (which we all know), as follows:
 
 ```python
 
