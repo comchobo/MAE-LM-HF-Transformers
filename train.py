@@ -172,7 +172,7 @@ if __name__ == '__main__':
     dataset = load_dataset("lhoestq/demo1")
 
     def tokenize(row):
-        return tokenizer(row['title'], padding='max_length', max_length=128, truncation=True)
+        return tokenizer(row['review'], padding='max_length', max_length=128, truncation=True)
     tokenized_toy_data = toy_data.map(tokenize, remove_columns='label')
     tokenized_toy_data = tokenized_toy_data.train_test_split(test_size=0.1)
 
